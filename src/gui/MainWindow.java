@@ -225,7 +225,7 @@ public class MainWindow {
 	private void startProcess() {
 		if (files.size() > 0) {
 			progressFlag = false;
-			Progress2 dlg = new Progress2(frame, files.size() - 1);
+			Progress dlg = new Progress(frame, files.size() - 1);
 			Thread t = new Thread(new Runnable() {
 				public void run() {
 					dlg.setVisible(true);
